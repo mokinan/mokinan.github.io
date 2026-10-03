@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohamed Kinan — Principal Flutter Engineer</title>
+  <meta name="description" content="Principal Flutter Engineer with 7 years of shipping production apps. Offline-first architecture, fintech and ERP/SaaS, Arabic/RTL. Based in Cairo, open to remote roles.">
+  <meta name="theme-color" content="#f5f4ef" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0e0c" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://mokinan.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mokinan.github.io/">
+  <meta property="og:title" content="Mohamed Kinan — Principal Flutter Engineer">
+  <meta property="og:description" content="Flutter apps that keep working — offline, at scale, and years after launch.">
+  <meta property="og:image" content="https://mokinan.github.io/assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    // Apply the saved theme before first paint to avoid a flash.
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    document.documentElement.classList.add('js');
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="#top" class="brand" aria-label="Home"><span class="brand__mark" data-bind="initials"></span><span class="brand__name" data-bind="name"></span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Main">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#open-source">Open source</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
+      <div class="nav__tools">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.3A8.5 8.5 0 0 1 9.7 3.5a8.5 8.5 0 1 0 10.8 10.8Z"/></svg>
+        </button>
+        <button class="icon-btn nav__menu" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true"><div class="glow glow--a"></div><div class="glow glow--b"></div><div class="grid"></div></div>
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <p class="pill reveal"><span class="pulse" aria-hidden="true"></span><span data-bind="availability"></span> · <span data-bind="location"></span></p>
+          <p class="eyebrow reveal" data-bind="role"></p>
+          <h1 class="hero__title" id="heroTitle"></h1>
+          <p class="hero__intro reveal" data-bind="hero.intro"></p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary" href="#projects">See my work <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn--ghost" id="heroEmail" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="phones" id="heroPhones"></div>
+        </div>
+      </div>
+      <a href="#work" class="scroll-cue" aria-label="Scroll to work"><span></span></a>
+    </section>
+
+    <section class="stats" aria-label="At a glance">
+      <div class="wrap stats__grid" id="stats"></div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker"><span>01</span> Production work</p>
+          <h2>Products people rely on <em>every day.</em></h2>
+        </header>
+        <div class="cards" id="production"></div>
+        <p class="note reveal" id="productionNote"></p>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker"><span>02</span> Selected projects</p>
+          <h2>Open code, <em>production habits.</em></h2>
+          <p class="section__lead">Public projects built with the same patterns I use at work — with the tests, CI and written decisions to back them up.</p>
+        </header>
+      </div>
+      <div id="projectList"></div>
+    </section>
+
+    <section class="section" id="open-source">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker"><span>03</span> Open source</p>
+          <h2>Small packages, <em>real problems.</em></h2>
+        </header>
+        <div class="packages" id="packages"></div>
+      </div>
+    </section>
+
+    <section class="section" id="approach">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker"><span>04</span> How I work</p>
+          <h2>Principles I bring <em>to a team.</em></h2>
+        </header>
+        <ol class="principles" id="principles"></ol>
+        <div class="toolbox reveal" id="toolbox"></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contact__inner reveal">
+        <p class="kicker"><span>05</span> Contact</p>
+        <h2 class="contact__title">Building something that <em>has to work?</em> Let's talk.</h2>
+        <div class="contact__actions">
+          <a class="btn btn--primary btn--lg" id="emailLink" href="#"><span data-bind="email"></span></a>
+          <button class="btn btn--ghost btn--lg" id="copyEmail" type="button">Copy email</button>
+        </div>
+        <ul class="socials">
+          <li><a id="linkedinLink" href="#" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a id="githubLink" href="#" target="_blank" rel="noopener">GitHub ↗</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© <span id="year"></span> <span data-bind="name"></span></span>
+      <span>Hand-built — no frameworks, no trackers.</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
