@@ -294,6 +294,17 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .card h3 { font-size: 1.7rem; margin-top: 18px; }
 .card p { color: var(--ink-2); flex: 1; }
 .card .tags { margin-top: 6px; }
+.card__link::after { content: ""; position: absolute; inset: 0; z-index: 0; border-radius: inherit; }
+.card__link:focus-visible { outline: none; }
+.card:has(.card__link:focus-visible) { outline: 2px solid var(--brand); outline-offset: 3px; }
+.stores { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; padding-top: 18px; border-top: 1px solid var(--line); }
+.stores a {
+  display: inline-flex; align-items: center; gap: 7px; height: 36px; padding: 0 14px; border-radius: 10px;
+  background: var(--ink); color: var(--bg); font-size: 0.82rem; font-weight: 500;
+  transition: transform 0.3s var(--ease), opacity 0.3s;
+}
+.stores a:hover { transform: translateY(-2px); }
+.stores svg { width: 15px; height: 15px; fill: currentColor; }
 .note { margin-top: 24px; color: var(--ink-3); font-size: 0.92rem; display: flex; gap: 10px; align-items: center; }
 .note::before { content: ""; width: 18px; height: 1px; background: var(--ink-3); flex: none; }
 

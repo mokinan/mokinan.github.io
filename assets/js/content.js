@@ -12,7 +12,7 @@ window.SITE = {
   email: "mohamed.kinan3@gmail.com",
   links: {
     github: "https://github.com/mokinan",
-    linkedin: "https://www.linkedin.com/in/mohamed-kinan-7883851a8/",
+    linkedin: "https://www.linkedin.com/in/mokinan/",
   },
 
   hero: {
@@ -48,22 +48,34 @@ window.SITE = {
         description:
           "Tuition financing for parents — from the application through installment plans to repayment.",
         tags: ["Financing", "Installments", "Repayments"],
+        stores: {
+          appStore: "https://apps.apple.com/sa/app/id6768550546",
+          googlePlay: "https://play.google.com/store/apps/details?id=com.madark.institution",
+        },
       },
       {
         name: "Rassd Billing",
-        url: "https://rassd.sa",
+        url: "https://rassd.sa/fawtara",
         domain: "ERP / SaaS · Invoicing",
         description:
           "Cloud billing and invoicing for businesses, part of the Rassd Cloud suite.",
         tags: ["Invoicing", "Cloud ERP"],
+        stores: {
+          appStore: "https://apps.apple.com/sa/app/id6478158183",
+          googlePlay: "https://play.google.com/store/apps/details?id=com.worldofss.rassd_billing",
+        },
       },
       {
         name: "Rassd Attendance",
-        url: "https://rassd.sa",
+        url: "https://rassd.sa/twajd",
         domain: "ERP / SaaS · Workforce",
         description:
           "Employee attendance tracking and reporting, part of the Rassd Cloud suite.",
         tags: ["Attendance", "Reporting", "Cloud ERP"],
+        stores: {
+          appStore: "https://apps.apple.com/sa/app/id6456840349",
+          googlePlay: "https://play.google.com/store/apps/details?id=com.worldofss.MotwagedRassdApp",
+        },
       },
     ],
   },
