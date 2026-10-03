@@ -131,6 +131,31 @@ window.SITE = {
         ],
       },
     },
+    {
+      id: "new-app",
+      name: "new_app — one app, five architectures",
+      repo: "https://github.com/mokinan/new_app",
+      tagline:
+        "The starter I open every new project with — implemented five times, once per state-management approach, so a team can compare them on identical code.",
+      accent: "#3a4fc7",
+      accentDark: "#9fb0ff",
+      highlights: [
+        ["Same app, same tests, five ways", "GetX, Cubit, Bloc, Provider and Riverpod branches pass the same 15 user-journey tests and the same on-device run."],
+        ["Navigation follows the session", "Signing in, signing out or a revoked token moves the user through a router guard — no screen calls navigate itself."],
+        ["Real stack, offline", "Dio with single-flight token refresh against a built-in mock backend, so every branch runs with zero setup."],
+        ["Server errors where they belong", "Field errors from the API appear under the field that caused them, and double submits are ignored."],
+        ["A guide for choosing", "The main branch compares the approaches and says when each one fits a team."],
+      ],
+      stack: ["Riverpod 3", "Bloc / Cubit", "Provider", "GetX", "go_router", "Dio"],
+      facts: ["5 branches · 1 shared core", "54–66 tests each", "Arabic / RTL"],
+      media: {
+        main: { src: "assets/img/new-app/journey.gif", alt: "Onboarding, login, a server field error, then home in light and dark mode" },
+        side: [
+          { src: "assets/img/new-app/register-errors.png", alt: "Registration with a server error shown under the email field" },
+          { src: "assets/img/new-app/home-dark.png", alt: "Home screen in dark mode" },
+        ],
+      },
+    },
   ],
 
   packages: [
